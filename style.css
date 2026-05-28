@@ -10,7 +10,24 @@ html {
 body {
     background: #070b1d;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+
+    background-color: #070b1d;
+
+background-image:
+
+linear-gradient(
+rgba(255,255,255,0.04) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,0.04) 1px,
+transparent 1px
+);
+
+background-size: 40px 40px;
 }
 
 /* HEADER */
@@ -36,6 +53,7 @@ body {
 }
 
 .logo {
+  
     font-size: 34px;
     font-weight: bold;
 }
@@ -86,6 +104,15 @@ body {
 /* HERO */
 
 .hero {
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #071126,
+        #09193b
+    );
+
     width: 100%;
     min-height: 700px;
 
@@ -157,6 +184,11 @@ body {
 }
 
 .play-btn:hover {
+
+    box-shadow: 0 0 20px #248bff,
+                0 0 40px #248bff;
+
+    transform: scale(1.05);            
     transform: translateY(-3px);
 }
 
@@ -557,4 +589,22 @@ body {
         );
 
     border: 1px solid #38539b;
+}
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+    radial-gradient(rgb(253, 253, 253) 1px, transparent 1px);
+
+    background-size: 80px 80px;
+
+    opacity: 0.1;
+
+    pointer-events: none;
 }
